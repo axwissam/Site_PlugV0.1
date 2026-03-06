@@ -282,6 +282,7 @@
 
   <!-- Scripts -->
   <script src="script.js"></script>
+  <script src="particles.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     // Inicializar AOS
@@ -308,62 +309,55 @@
           {
             "particles": {
               "number": {
-                "value": 50,
+                "value": 12,
                 "density": {
                   "enable": true,
                   "value_area": 800
                 }
               },
               "color": {
-                "value": "#0054A6"
+                "value": ["#00b4d8", "#008ba8", "#a0a0a0", "#ffffff"]
               },
               "shape": {
                 "type": "circle",
                 "stroke": {
                   "width": 0,
                   "color": "#000000"
-                },
-                "polygon": {
-                  "nb_sides": 5
                 }
               },
               "opacity": {
-                "value": 0.5,
-                "random": false,
+                "value": 0.6,
+                "random": true,
                 "anim": {
-                  "enable": false,
+                  "enable": true,
                   "speed": 1,
-                  "opacity_min": 0.1,
+                  "opacity_min": 0.2,
                   "sync": false
                 }
               },
               "size": {
-                "value": 3,
+                "value": 45,
                 "random": true,
                 "anim": {
-                  "enable": false,
-                  "speed": 40,
-                  "size_min": 0.1,
+                  "enable": true,
+                  "speed": 2.5,
+                  "size_min": 20,
                   "sync": false
                 }
               },
               "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": "#0054A6",
-                "opacity": 0.4,
-                "width": 1
+                "enable": false
               },
               "move": {
                 "enable": true,
-                "speed": 2,
+                "speed": 1.5,
                 "direction": "none",
-                "random": false,
+                "random": true,
                 "straight": false,
                 "out_mode": "out",
                 "bounce": false,
                 "attract": {
-                  "enable": false,
+                  "enable": true,
                   "rotateX": 600,
                   "rotateY": 1200
                 }
@@ -374,7 +368,7 @@
               "events": {
                 "onhover": {
                   "enable": true,
-                  "mode": "grab"
+                  "mode": "repulse"
                 },
                 "onclick": {
                   "enable": true,
@@ -383,27 +377,11 @@
                 "resize": true
               },
               "modes": {
-                "grab": {
-                  "distance": 140,
-                  "line_linked": {
-                    "opacity": 1
-                  }
-                },
-                "bubble": {
-                  "distance": 400,
-                  "size": 40,
-                  "duration": 2,
-                  "opacity": 8,
-                  "speed": 3
-                },
                 "repulse": {
                   "distance": 200,
                   "duration": 0.4
                 },
                 "push": {
-                  "particles_nb": 4
-                },
-                "remove": {
                   "particles_nb": 2
                 }
               }

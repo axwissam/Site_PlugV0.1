@@ -3,15 +3,15 @@
    ========================================= */
 :root {
     /* Colors */
-    --color-primary: #3b82f6; /* Blue */
-    --color-primary-hover: #2563eb;
-    --color-accent: #8b5cf6; /* Violet */
+    --color-primary: #00b4d8; /* Cyan da Logo */
+    --color-primary-hover: #008ba8;
+    --color-accent: #a0a0a0; /* Cinza da Logo */
     --color-whatsapp: #61CE70;
     --color-whatsapp-hover: #50b95e;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-    --gradient-glow: rgba(139, 92, 246, 0.4);
+    --gradient-primary: linear-gradient(135deg, #00b4d8 0%, #008ba8 100%);
+    --gradient-glow: rgba(0, 180, 216, 0.4);
 
     /* Dark Theme Colors */
     --color-bg-dark: #09090b;
@@ -314,6 +314,7 @@ ul {
     width: 100%;
     height: 100%;
     z-index: 1;
+    filter: blur(25px);
 }
 
 .hero-container {
